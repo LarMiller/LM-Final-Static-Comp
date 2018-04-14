@@ -1,10 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Static-Comp-3</title>
+  </head>
+  <body>
+    <nav class="left-nav-container">
+      <header class="user-profile-snapshot">
+        <img src="" alt="photo of current user" class="user-photo">
+        <p class="header-user-name">Mr. JJ Watt</p>
+      </header>
+      <article class="header-list-navigation-menu">
+        <h3 class="menu-header">Main</h3>
+        <ul class="main-navigation-list">
+          <li class="navigation-menu-main home">HOME</li>
+          <li class="navigation-menu-main job">JOB</li>
+          <li class="navigation-menu-main resume">RESUME</li>
+          <li class="navigation-menu-main task">TASK</li>
+          <li class="navigation-menu-main calendar">CALENDAR</li>
+        </ul>
+      </article>
+      <article class="header-list-navigation-admin">
+        <h3 class="admin-header">Admin</h3>
+        <ul class="admin-navigation-list">
+          <li class="navigation-menu-admin users">USERS</li>
+          <li class="navigation-menu-admin locations">LOCATIONS</li>
+          <li class="navigation-menu-admin workflows">WORKFLOWS</li>
+          <li class="navigation-menu-admin jobboards">JOBBOARDS</li>
+          <li class="navigation-menu-admin social"SOCIAL></li>
+        </ul>
+      </article>
+      <article class="header-list-navigation-catagories">
+        <h3 class="catagories-header">Catagories</h3>
+        <ul class="catagories-navigation-list">
+          <li class="navigation-menu-catagories admin">Administrative</li>
+          <li class="navigation-menu-catagories design">Design</li>
+          <li class="navigation-menu-catagories exec">Executive</li>
+          <li class="navigation-menu-catagories hr">Human Resources</li>
+        </ul>
+      </article>
+    </nav>
+    <main>
+      <section class="top-page-search-bar">
+        <div class="search-container-input-left">
+          <input class="header-hamburger" type="button">
+          <input class="top-search-field" type="text" placeholder="Search for a job, task, or resume">
+        </div>
+      </section>
+        <section class="top-page-tabs">
+          <div class="search-container-tabs-right">
+            <ul class="page-top-tabs">
+              <li class="user-icon-icon"></li>
+              <li class="user-calendar-icon"></li>
+              <li class="user-page-display-icon"></li>
+            </ul>
+          </div>
+        </section>
+        <section class="dashboard">
+          <div class="dashboard-top">
+            <div class="position-description-container">
+              <h1 class="displayed-position-title">Customer Service Representative</h1>
+              <h2 class="displayed-position-location">San Francisco, CA</h2>
+            </div>
+            <div class="displayed-position-status-container">
+              <button class="position-status btn">Open</button>
+              <button class="bookmark-job btn"></button>
+              <button class="site-home btn"></button>
+            </div>
+            <div class="dashboard-bottom">
+              <ul class="dashboard-navigation">
+                <li class="summ">SUMMAY</li>
+                <li class="app">APPLICANTS</li>
+                <li class="jobboard">JOB BOARD</li>
+                <li class="int">INTERVIEW</li>
+                <li class="act">ACTIVITY</li>
+                <li class="broad">BROADCAST</li>
+                <li class="notification">NOTIFICATIONS</li>
+              </ul>
+            </div>
+          </section>
+          <section class="data-visuals">
+            <div class="visuals-container">
+              <article class="circle-graph-display">
+                <div class="circle-graph container">
+
+                  <!-- GRAPHS WILL GO HERE -->
+
+                  <div class="first-circle-graph"></div>
+                  <div class="second-circle-graph"></div>
+                  <div class="third-circle-graph"></div>
+                </div>
+                <button class="totals btn">TOTALS - out of 462 views</button>
+              </article>
+              <article class="bar-graph-display">
+                <div class="bar-graph-container">
+                  <!-- bar graph image will go here -->
+                </div>
+                <button class="applicants btn"></button>
+              </article>
+            </div>
+            <aside class="section-break-border"></aside>
+          </section>
+          <section class="page-lower-half">
+            <div class="lower-container">
+              <article class="description-table-display">
+                <!-- job description info will go here  -->
+              </article>
+            </div>
+            <aside class="social-media">
+              <div class="social-media-container">
+                <button class="facebook btn">Post To Facebook</button>
+                <button class="twitter btn">Tweet This Job</button>
+                <button class="linkedin btn">Post To LinkedIn</button>  
+              </div>
+              <section class="subscriptions-info">
+                <article class="link-job">
+                  <h4 class="link-job">Link To This Job</h4>
+                  <p class="job-lorem"></p>
+                  <input type="text" class="link-field">
+                  <button class="copy btn">Copy</button>
+                </article>
+                <article class="use-widget">
+                  <h4 class="widget-title">Use The Widget Button</h4>
+                  <p class="widget-info"></p>
+                  <input type="text" class="link-field">
+                  <button class="copy btn">Copy</button>
+                </article>
+                <article class="resume">
+                  <h4 class="resume-upload">Upload Resumes By Email</h4>
+                  <p class="resume-ipsum"></p>
+                  <input type="text" class="link-field">
+                </article>
+              </section>
+            </aside>
+          </section>
+        </main>
+      </body>
+    </html>
