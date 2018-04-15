@@ -15,22 +15,28 @@ body {
 h3 {
     color: darkgrey;
     margin: 1rem 0;
+    padding-left: .7rem;
   }
 
   ul {
     display: block;
     list-style-type: none;
     font-size: .80rem;
+    margin: 1rem;
   }
 
   li {
     margin: .5rem;
   }
+
+  a {
+  color: #A3ADBE;
+  text-decoration: none;
+}
+
 .wrapper {
-  border: 1px solid orange;
-  background-color: grey;
   max-width: 1400px;
-  height: 100vh
+  height: 100vh;
 }
 
 /*main nav on the left*/
@@ -38,11 +44,13 @@ h3 {
   color: lightgrey;
   font-size: 1rem;
   background-color: #343f56;
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: inline-block;
   float: left;
   width: 15vw;
   height: 100vh;
+  position: relative;
 }
 
 main {
@@ -94,9 +102,8 @@ main {
 }
 
 .top-page-search-bar {
-    height: 2.5rem;
+    height: 4rem;
     display: inline-block;
-    margin: -2px 0 -2px 0;
     width: 85vw;
     display: flex;
     flex-direction: row;
@@ -109,14 +116,34 @@ main {
   height: 3rem;
 }
 
+.header-hamburger {
+  height: 4rem;
+  width: 3rem;
+  position: relative;
+}
+
+.top-search-field {
+    display: inline-block;
+    width: 30rem;
+/*    position: absolute;
+*/    height: 3rem;
+}
 .header-list-navigation-menu {
   width: 100%;
   border-bottom: .2rem solid black;
 }
 
 .header-list-navigation-admin {
-  border-bottom: .1rem solid black;
-  
+  border-bottom: .1rem solid black; 
+}
+
+.dashboard-navigation {
+  display: inline-block;
+}
+
+.social-media {
+  float: right;
+  display: inline-block;
 }
 /* ======================================
  

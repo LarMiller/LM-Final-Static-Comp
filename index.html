@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <title>Static-Comp-3</title>
   </head>
   <body>
@@ -18,23 +19,23 @@
           </div>
         </header>
         <article class="header-list-navigation-menu">
-          <h3 class="menu-header">Main</h3>
-          <ul class="main-navigation-list">
-            <li class="navigation-menu-main home">HOME</li>
-            <li class="navigation-menu-main job">JOB</li>
-            <li class="navigation-menu-main resume">RESUME</li>
-            <li class="navigation-menu-main task">TASK</li>
-            <li class="navigation-menu-main calendar">CALENDAR</li>
+          <ul>
+            <h3 class="menu-header">Main</h3>
+            <li class="main-links" alt="go to home"><a href="#"><i class="fas fa-home" aria-hidden="true"></i> HOME</a></li>
+            <li class="main-links"><a href="#" class="blue"><i class="fas fa-briefcase" aria-hidden="true"></i> JOBS</a></li>
+            <li class="main-links"><a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> RESUME</a></li>
+            <li class="main-links"><a href="#"><i class="fas fa-clipboard" aria-hidden="true"></i> TASKS</a></li>
+            <li class="main-links"><a href="#"><i class="fas fa-calendar-alt" aria-hidden="true"></i> CALENDAR</a></li>
           </ul>
         </article>
         <article class="header-list-navigation-admin">
-          <h3 class="admin-header">Admin</h3>
-          <ul class="admin-navigation-list">
-            <li class="navigation-menu-admin users">USERS</li>
-            <li class="navigation-menu-admin locations">LOCATIONS</li>
-            <li class="navigation-menu-admin workflows">WORKFLOWS</li>
-            <li class="navigation-menu-admin jobboards">JOBBOARDS</li>
-            <li class="navigation-menu-admin social"SOCIAL></li>
+          <ul>
+            <h3 class="admin-header">Admin</h3>
+            <li class="main-links"><a href="#"> <i class="fas fa-user" aria-hidden="true"></i> USERS</a></li>
+            <li class="main-links"><a href="#"> <i class="fas fa-map-marker" aria-hidden="true"></i> LOCATIONS</a></li>
+            <li class="main-links"><a href="#"> <i class="fas fa-chart-area"></i>WORKFLOWS</a></li>
+            <li class="main-links"><a href="#"><i class="fas fa-clipboard" aria-hidden="true"></i> JOB BOARDS</a></li>
+            <li class="main-links"><a href="#"> <i class="fas fa-share-alt" aria-hidden="true"></i> SOCIAL</a></li>
           </ul>
         </article>
         <article class="header-list-navigation-catagories">
@@ -50,7 +51,7 @@
       <main>
         <section class="top-page-search-bar">
           <div class="search-container-input-left">
-            <input class="header-hamburger" type="button">
+            <button class="header-hamburger" type="button">
             <input class="top-search-field" type="text" placeholder="Search for a job, task, or resume">
           </div>
         </section>
