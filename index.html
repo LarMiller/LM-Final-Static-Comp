@@ -2,53 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <title>Static-Comp-3</title>
   </head>
   <body>
-    <nav class="left-nav-container">
-      <header class="user-profile-snapshot">
-        <img src="" alt="photo of current user" class="user-photo">
-        <p class="header-user-name">Mr. JJ Watt</p>
-      </header>
-      <article class="header-list-navigation-menu">
-        <h3 class="menu-header">Main</h3>
-        <ul class="main-navigation-list">
-          <li class="navigation-menu-main home">HOME</li>
-          <li class="navigation-menu-main job">JOB</li>
-          <li class="navigation-menu-main resume">RESUME</li>
-          <li class="navigation-menu-main task">TASK</li>
-          <li class="navigation-menu-main calendar">CALENDAR</li>
-        </ul>
-      </article>
-      <article class="header-list-navigation-admin">
-        <h3 class="admin-header">Admin</h3>
-        <ul class="admin-navigation-list">
-          <li class="navigation-menu-admin users">USERS</li>
-          <li class="navigation-menu-admin locations">LOCATIONS</li>
-          <li class="navigation-menu-admin workflows">WORKFLOWS</li>
-          <li class="navigation-menu-admin jobboards">JOBBOARDS</li>
-          <li class="navigation-menu-admin social"SOCIAL></li>
-        </ul>
-      </article>
-      <article class="header-list-navigation-catagories">
-        <h3 class="catagories-header">Catagories</h3>
-        <ul class="catagories-navigation-list">
-          <li class="navigation-menu-catagories admin">Administrative</li>
-          <li class="navigation-menu-catagories design">Design</li>
-          <li class="navigation-menu-catagories exec">Executive</li>
-          <li class="navigation-menu-catagories hr">Human Resources</li>
-        </ul>
-      </article>
-    </nav>
-    <main>
-      <section class="top-page-search-bar">
-        <div class="search-container-input-left">
-          <input class="header-hamburger" type="button">
-          <input class="top-search-field" type="text" placeholder="Search for a job, task, or resume">
-        </div>
-      </section>
+    <div class="wrapper">
+      <nav class="left-nav-container">
+        <div class="top-left-user-info">
+          <header class="user-profile-snapshot">
+            <img src= "images/JJWATT2.jpg" alt="Photo of Current User JJ Watt" class="user-photo">
+            <p class="header-user-name">JJ Watt</p>
+          </div>
+        </header>
+        <article class="header-list-navigation-menu">
+          <ul>
+            <h3 class="menu-header">Main</h3>
+            <li class="main-links" alt="go to home"><a href="#"><i class="fas fa-home" aria-hidden="true"></i> HOME</a></li>
+            <li class="main-links"><a href="#" class="blue"><i class="fas fa-briefcase" aria-hidden="true"></i> JOBS</a></li>
+            <li class="main-links"><a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> RESUME</a></li>
+            <li class="main-links"><a href="#"><i class="fas fa-clipboard" aria-hidden="true"></i> TASKS</a></li>
+            <li class="main-links"><a href="#"><i class="fas fa-calendar-alt" aria-hidden="true"></i> CALENDAR</a></li>
+          </ul>
+        </article>
+        <article class="header-list-navigation-admin">
+          <ul>
+            <h3 class="admin-header">Admin</h3>
+            <li class="main-links"><a href="#"> <i class="fas fa-user" aria-hidden="true"></i> USERS</a></li>
+            <li class="main-links"><a href="#"> <i class="fas fa-map-marker" aria-hidden="true"></i> LOCATIONS</a></li>
+            <li class="main-links"><a href="#"> <i class="fas fa-chart-area"></i>WORKFLOWS</a></li>
+            <li class="main-links"><a href="#"><i class="fas fa-clipboard" aria-hidden="true"></i> JOB BOARDS</a></li>
+            <li class="main-links"><a href="#"> <i class="fas fa-share-alt" aria-hidden="true"></i> SOCIAL</a></li>
+          </ul>
+        </article>
+        <article class="header-list-navigation-catagories">
+          <h3 class="catagories-header">Catagories</h3>
+          <ul class="catagories-navigation-list">
+            <li class="navigation-menu-catagories admin">Administrative</li>
+            <li class="navigation-menu-catagories design">Design</li>
+            <li class="navigation-menu-catagories exec">Executive</li>
+            <li class="navigation-menu-catagories hr">Human Resources</li>
+          </ul>
+        </article>
+      </nav>
+      <main>
+        <section class="top-page-search-bar">
+          <div class="search-container-input-left">
+            <button class="header-hamburger" type="button"></button>
+            <input class="top-search-field" type="text" placeholder="Search for a job, task, or resume">
+          </div>
+        </section>
         <section class="top-page-tabs">
           <div class="search-container-tabs-right">
             <ul class="page-top-tabs">
@@ -85,9 +91,7 @@
             <div class="visuals-container">
               <article class="circle-graph-display">
                 <div class="circle-graph container">
-
                   <!-- GRAPHS WILL GO HERE -->
-
                   <div class="first-circle-graph"></div>
                   <div class="second-circle-graph"></div>
                   <div class="third-circle-graph"></div>
@@ -101,41 +105,42 @@
                 <button class="applicants btn"></button>
               </article>
             </div>
-            <aside class="section-break-border"></aside>
-          </section>
-          <section class="page-lower-half">
-            <div class="lower-container">
-              <article class="description-table-display">
-                <!-- job description info will go here  -->
-              </article>
+          <aside class="section-break-border"></aside>
+        </section>
+        <section class="page-lower-half">
+          <div class="lower-container">
+            <article class="description-table-display">
+              <!-- job description info will go here  -->
+            </article>
+          </div>
+          <aside class="social-media">
+            <div class="social-media-container">
+              <button class="facebook btn">Post To Facebook</button>
+              <button class="twitter btn">Tweet This Job</button>
+              <button class="linkedin btn">Post To LinkedIn</button>
             </div>
-            <aside class="social-media">
-              <div class="social-media-container">
-                <button class="facebook btn">Post To Facebook</button>
-                <button class="twitter btn">Tweet This Job</button>
-                <button class="linkedin btn">Post To LinkedIn</button>  
-              </div>
-              <section class="subscriptions-info">
-                <article class="link-job">
-                  <h4 class="link-job">Link To This Job</h4>
-                  <p class="job-lorem"></p>
-                  <input type="text" class="link-field">
-                  <button class="copy btn">Copy</button>
-                </article>
-                <article class="use-widget">
-                  <h4 class="widget-title">Use The Widget Button</h4>
-                  <p class="widget-info"></p>
-                  <input type="text" class="link-field">
-                  <button class="copy btn">Copy</button>
-                </article>
-                <article class="resume">
-                  <h4 class="resume-upload">Upload Resumes By Email</h4>
-                  <p class="resume-ipsum"></p>
-                  <input type="text" class="link-field">
-                </article>
-              </section>
-            </aside>
-          </section>
-        </main>
-      </body>
-    </html>
+            <section class="subscriptions-info">
+              <article class="link-job">
+                <h4 class="link-job">Link To This Job</h4>
+                <p class="job-lorem"></p>
+                <input type="text" class="link-field">
+                <button class="copy btn">Copy</button>
+              </article>
+              <article class="use-widget">
+                <h4 class="widget-title">Use The Widget Button</h4>
+                <p class="widget-info"></p>
+                <input type="text" class="link-field">
+                <button class="copy btn">Copy</button>
+              </article>
+              <article class="resume">
+                <h4 class="resume-upload">Upload Resumes By Email</h4>
+                <p class="resume-ipsum"></p>
+                <input type="text" class="link-field">
+              </article>
+            </section>
+          </aside>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
